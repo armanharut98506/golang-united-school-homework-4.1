@@ -1,6 +1,11 @@
 package reverse_string
 
+import "fmt"
+
 func ReverseString(input string) (output string) {
-	// solution goes here
+	for _, char := range input {
+		output = string(char) + output
+	}
 	return output
 }
+
